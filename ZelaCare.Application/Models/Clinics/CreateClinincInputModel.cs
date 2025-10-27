@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ZelaCare.Core.Entities;
+
+namespace ZelaCare.Application.Models.Clinics
+{
+    public class CreateClinincInputModel
+    {
+        public CreateClinincInputModel(string name, string? cnpj, string phone)
+        {
+            Name = name;
+            CNPJ = cnpj;
+            Phone = phone;
+        }
+
+        public string Name { get; private set; }
+        public string? CNPJ { get; private set; }
+        public string Phone { get; private set; }
+
+        public Clinic ToEntity() => new Clinic(Name, CNPJ, Phone);
+    }
+}

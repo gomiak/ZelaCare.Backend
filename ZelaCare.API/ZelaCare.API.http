@@ -1,0 +1,56 @@
+@ZelaCare.API_HostAddress = https://localhost:7271
+
+### Create User
+POST {{ZelaCare.API_HostAddress}}/users
+Content-Type: application/json
+
+{
+  "email": "usuario@exemplo.com",
+  "password": "Senha1234",
+  "role": 1,
+  "clinicId": "0be8c97f-1bf3-40d0-a843-515363d0ba45"
+}
+
+
+### Get User by Id
+GET {{ZelaCare.API_HostAddress}}/users/4b3dabf2-88b3-4cc1-86c4-1250383bee6f
+
+
+@ZelaCare.API_HostAddress = https://localhost:7271
+
+### Create Clinic
+POST {{ZelaCare.API_HostAddress}}/clinic
+Content-Type: application/json
+
+{
+  "name": "Clínica Bem Viver",
+  "cnpj": "12345678000190",
+  "phone": "(54) 99999-9999"
+}
+
+
+### Get Clinic by Id
+GET {{ZelaCare.API_HostAddress}}/clinic/0be8c97f-1bf3-40d0-a843-515363d0ba45
+
+
+### Get Clinic by CNPJ
+GET {{ZelaCare.API_HostAddress}}/clinic/cnpj/12345678000190
+
+
+### Get All Clinics
+GET {{ZelaCare.API_HostAddress}}/clinic
+
+
+### Update Clinic
+PUT {{ZelaCare.API_HostAddress}}/clinic/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+
+{
+  "name": "Clínica Atualizada",
+  "cnpj": "12345678000190",
+  "phone": "(54) 98888-8888"
+}
+
+
+### Delete Clinic
+DELETE {{ZelaCare.API_HostAddress}}/clinic/00000000-0000-0000-0000-000000000000

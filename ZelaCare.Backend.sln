@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZelaCare.API", "ZelaCare.API\ZelaCare.API.csproj", "{8C6F5CE7-7105-47AE-803A-05DBCF04DA70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZelaCare.Application", "ZelaCare.Application\ZelaCare.Application.csproj", "{4044B981-09B1-4B99-8F7A-FE98428FB40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZelaCare.Core", "ZelaCare.Core\ZelaCare.Core.csproj", "{9EFFF244-B56C-40D0-B46C-E12939469BC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZelaCare.Infrastructure", "ZelaCare.Infrastructure\ZelaCare.Infrastructure.csproj", "{4FE17E7E-750E-49C9-9792-7A3084B6385B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C6F5CE7-7105-47AE-803A-05DBCF04DA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6F5CE7-7105-47AE-803A-05DBCF04DA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6F5CE7-7105-47AE-803A-05DBCF04DA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6F5CE7-7105-47AE-803A-05DBCF04DA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4044B981-09B1-4B99-8F7A-FE98428FB40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4044B981-09B1-4B99-8F7A-FE98428FB40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4044B981-09B1-4B99-8F7A-FE98428FB40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4044B981-09B1-4B99-8F7A-FE98428FB40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EFFF244-B56C-40D0-B46C-E12939469BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFFF244-B56C-40D0-B46C-E12939469BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFFF244-B56C-40D0-B46C-E12939469BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFFF244-B56C-40D0-B46C-E12939469BC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE17E7E-750E-49C9-9792-7A3084B6385B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE17E7E-750E-49C9-9792-7A3084B6385B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE17E7E-750E-49C9-9792-7A3084B6385B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE17E7E-750E-49C9-9792-7A3084B6385B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
