@@ -1,4 +1,4 @@
-﻿namespace ZelaCare.Application.Models.Clinics
+﻿namespace ZelaCare.Shared.Models.Clinics
 {
     public class UpdateClinicInputModel
     {

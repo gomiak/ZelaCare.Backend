@@ -1,6 +1,6 @@
 ﻿using ZelaCare.Core.Enums;
 
-namespace ZelaCare.Application.Models.Users
+namespace ZelaCare.Shared.Models.Users
 {
     public class UpdateUserInputModel
     {

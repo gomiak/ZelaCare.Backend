@@ -1,4 +1,4 @@
-﻿namespace ZelaCare.Application.Models
+﻿namespace ZelaCare.Shared.Models
 {
     public class ResultViewModel
     {

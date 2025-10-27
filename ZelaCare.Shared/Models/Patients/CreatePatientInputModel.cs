@@ -1,11 +1,11 @@
 ﻿using ZelaCare.Core.Entities;
 using ZelaCare.Core.ValueObjects;
 
-namespace ZelaCare.Application.Models.Patients
+namespace ZelaCare.Shared.Models.Patients
 {
-    public class PatientViewModel
+    public class CreatePatientInputModel
     {
-        public PatientViewModel(
+        public CreatePatientInputModel(
             string fullName,
             string? cpf,
             DateTime birthDate,
@@ -43,19 +43,20 @@ namespace ZelaCare.Application.Models.Patients
         public bool IsPrivate { get; private set; }
         public HealthPlan? HealthPlan { get; private set; }
 
-        public static PatientViewModel FromEntity(Patient patient) =>
-            new PatientViewModel(
-                patient.FullName,
-                patient.CPF,
-                patient.BirthDate,
-                patient.Phone,
-                patient.Email,
-                patient.Address,
-                patient.ClinicId,
-                patient.EmergencyContact,
-                patient.EmergencyPhone,
-                patient.IsPrivate,
-                patient.HealthPlan
+        public Patient ToEntity()
+        {
+            return new Patient(
+                FullName,
+                CPF,
+                BirthDate,
+                Phone,
+                Email,
+                Address,
+                ClinicId,
+                EmergencyContact,
+                EmergencyPhone,
+                IsPrivate
             );
+        }
     }
 }

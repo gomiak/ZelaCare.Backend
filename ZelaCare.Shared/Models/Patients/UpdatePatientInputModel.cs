@@ -1,6 +1,6 @@
 ﻿using ZelaCare.Core.ValueObjects;
 
-namespace ZelaCare.Application.Models.Patients
+namespace ZelaCare.Shared.Models.Patients
 {
     public class UpdatePatientInputModel
     {
