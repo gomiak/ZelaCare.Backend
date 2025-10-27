@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ZelaCare.Core.Entities;
+﻿using ZelaCare.Core.Entities;
 
 namespace ZelaCare.Application.Models.Clinics
 {

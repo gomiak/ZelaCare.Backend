@@ -1,5 +1,5 @@
-﻿using ZelaCare.Application.Models.Patients;
-using ZelaCare.Application.Models;
+﻿using ZelaCare.Application.Models;
+using ZelaCare.Application.Models.Patients;
 using ZelaCare.Application.Utils;
 
 namespace ZelaCare.Application.Validations.Patients

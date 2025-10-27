@@ -1,5 +1,4 @@
 ﻿using ZelaCare.Core.Entities;
-using ZelaCare.Core.ValueObjects;
 
 namespace ZelaCare.Application.Models.Clinics
 {

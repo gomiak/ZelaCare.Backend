@@ -7,7 +7,7 @@ namespace ZelaCare.Infrastructure.Persistence.Repositories
     internal class ClinicRepository : IClinicRepository
     {
         private readonly ZelaCareDbContext _context;
-        public ClinicRepository(ZelaCareDbContext context) 
+        public ClinicRepository(ZelaCareDbContext context)
         {
             _context = context;
 
@@ -28,7 +28,7 @@ namespace ZelaCare.Infrastructure.Persistence.Repositories
 
         public async Task<Clinic?> GetByCnpjAsync(string cnpj)
         {
-            return await _context.Clinics.FirstOrDefaultAsync(c => !c.IsDeleted &&  c.CNPJ.Equals(cnpj));
+            return await _context.Clinics.FirstOrDefaultAsync(c => !c.IsDeleted && c.CNPJ.Equals(cnpj));
         }
 
         public async Task<Clinic?> GetByIdAsync(Guid id)

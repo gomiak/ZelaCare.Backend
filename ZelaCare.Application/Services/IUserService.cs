@@ -18,7 +18,7 @@ namespace ZelaCare.Application.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _repository;
-        public UserService(IUserRepository repository) 
+        public UserService(IUserRepository repository)
         {
             _repository = repository;
         }
@@ -42,7 +42,7 @@ namespace ZelaCare.Application.Services
         {
             var user = await _repository.GetByIdAsync(clinicId);
 
-            if(user is null)
+            if (user is null)
                 return ResultViewModel<UserViewModel>.Error("User not found.");
 
             var model = UserViewModel.FromEntity(user);
@@ -64,7 +64,7 @@ namespace ZelaCare.Application.Services
         public async Task<ResultViewModel> UpdateAsync(Guid id, UpdateUserInputModel model)
         {
             var validation = UpdateUserValidations.Validate(model);
-            if(validation.HasErrors)
+            if (validation.HasErrors)
                 return ResultViewModel.Error(validation.Errors);
 
             var user = await _repository.GetByIdAsync(id);

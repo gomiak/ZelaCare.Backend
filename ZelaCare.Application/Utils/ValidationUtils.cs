@@ -4,22 +4,22 @@ using System.Text.RegularExpressions;
 namespace ZelaCare.Application.Utils
 {
     public static class ValidationUtils
+    {
+        public static bool IsValidEmail(string email)
         {
-            public static bool IsValidEmail(string email)
-            {
-                if (string.IsNullOrWhiteSpace(email))
-                    return false;
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
 
-                try
-                {
-                    var addr = new MailAddress(email);
-                    return addr.Address == email;
-                }
-                catch
-                {
-                    return false;
-                }
+            try
+            {
+                var addr = new MailAddress(email);
+                return addr.Address == email;
             }
+            catch
+            {
+                return false;
+            }
+        }
 
         public static bool IsValidCpf(string? cpf)
         {

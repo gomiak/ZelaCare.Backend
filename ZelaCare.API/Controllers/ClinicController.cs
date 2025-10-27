@@ -9,7 +9,7 @@ namespace ZelaCare.API.Controllers
     public class ClinicController : ControllerBase
     {
         private readonly IClinicService _service;
-        public ClinicController(IClinicService service) 
+        public ClinicController(IClinicService service)
         {
             _service = service;
         }
@@ -19,7 +19,7 @@ namespace ZelaCare.API.Controllers
         public async Task<IActionResult> Post(CreateClinincInputModel model)
         {
             var result = await _service.CreateAsync(model);
-            if(!result.IsSuccess)
+            if (!result.IsSuccess)
                 return BadRequest(result);
 
             return CreatedAtAction(nameof(GetById), new { id = result.Data }, result);
@@ -30,7 +30,7 @@ namespace ZelaCare.API.Controllers
         {
             var result = await _service.GetByIdAsync(id);
 
-            if(!result.IsSuccess)
+            if (!result.IsSuccess)
                 return NotFound(result);
 
             return Ok(result);

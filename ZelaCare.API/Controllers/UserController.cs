@@ -6,16 +6,16 @@ namespace ZelaCare.API.Controllers
 {
     [ApiController]
     [Route("users")]
-    public class UserController :ControllerBase
+    public class UserController : ControllerBase
     {
         private readonly IUserService _service;
-        public UserController(IUserService service) 
+        public UserController(IUserService service)
         {
             _service = service;
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostAsync(CreateUserInputModel model) 
+        public async Task<IActionResult> PostAsync(CreateUserInputModel model)
         {
             var result = await _service.CreateAsync(model);
 
@@ -30,7 +30,7 @@ namespace ZelaCare.API.Controllers
         {
             var result = await _service.GetByIdAsync(id);
 
-            if(!result.IsSuccess)
+            if (!result.IsSuccess)
                 return NotFound(result);
 
             return Ok(result);

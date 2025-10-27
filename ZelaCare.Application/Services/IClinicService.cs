@@ -25,20 +25,20 @@ namespace ZelaCare.Application.Services
         public async Task<ResultViewModel<Guid>> CreateAsync(CreateClinincInputModel model)
         {
             var validations = CreateClinicValidations.Validate(model);
-            
-            if(validations.HasErrors)
+
+            if (validations.HasErrors)
                 return ResultViewModel<Guid>.Error(validations.Errors);
 
             var clinic = model.ToEntity();
             var clinicId = await _repository.AddAsync(clinic);
-   
+
             return ResultViewModel<Guid>.Success(clinicId);
         }
         public async Task<ResultViewModel<List<ClinicViewModel>>> GetAllAsync()
         {
             var clinics = await _repository.GetAllAsync();
 
-            var model = clinics.Select(ClinicViewModel.FromEntity).ToList();   
+            var model = clinics.Select(ClinicViewModel.FromEntity).ToList();
 
             return ResultViewModel<List<ClinicViewModel>>.Success(model);
         }
@@ -54,7 +54,7 @@ namespace ZelaCare.Application.Services
 
             return ResultViewModel<ClinicViewModel>.Success(model);
         }
-            
+
         public async Task<ResultViewModel<ClinicViewModel>> GetByIdAsync(Guid id)
         {
             var clinic = await _repository.GetByIdAsync(id);

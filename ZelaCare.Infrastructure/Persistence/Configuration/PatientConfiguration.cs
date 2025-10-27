@@ -33,7 +33,7 @@ namespace ZelaCare.Infrastructure.Persistence.Configuration
 
             patient.HasIndex(p => p.CPF)
                 .IsUnique();
-                
+
 
 
             patient.OwnsOne(p => p.Address, a => a.ConfigureAddress());
