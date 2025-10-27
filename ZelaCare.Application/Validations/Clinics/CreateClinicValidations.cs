@@ -1,5 +1,5 @@
-﻿using ZelaCare.Application.Models;
-using ZelaCare.Application.Models.Clinics;
+﻿using ZelaCare.Shared.Models;
+using ZelaCare.Shared.Models.Clinics;
 
 namespace ZelaCare.Application.Validations.Clinics
 {

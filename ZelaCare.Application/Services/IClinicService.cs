@@ -1,5 +1,5 @@
-﻿using ZelaCare.Application.Models;
-using ZelaCare.Application.Models.Clinics;
+﻿using ZelaCare.Shared.Models;
+using ZelaCare.Shared.Models.Clinics;
 using ZelaCare.Application.Validations.Clinics;
 using ZelaCare.Core.Repositories;
 

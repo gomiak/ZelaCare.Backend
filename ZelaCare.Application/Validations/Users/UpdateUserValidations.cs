@@ -1,5 +1,5 @@
-﻿using ZelaCare.Application.Models;
-using ZelaCare.Application.Models.Users;
+﻿using ZelaCare.Shared.Models;
+using ZelaCare.Shared.Models.Users;
 using ZelaCare.Application.Utils;
 
 namespace ZelaCare.Application.Validations.Users

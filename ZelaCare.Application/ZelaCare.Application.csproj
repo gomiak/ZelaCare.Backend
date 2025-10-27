@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ZelaCare.Core\ZelaCare.Core.csproj" />
     <ProjectReference Include="..\ZelaCare.Infrastructure\ZelaCare.Infrastructure.csproj" />
+    <ProjectReference Include="..\ZelaCare.Shared\ZelaCare.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

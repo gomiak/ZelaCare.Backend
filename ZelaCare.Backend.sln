@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZelaCare.Core", "ZelaCare.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZelaCare.Infrastructure", "ZelaCare.Infrastructure\ZelaCare.Infrastructure.csproj", "{4FE17E7E-750E-49C9-9792-7A3084B6385B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZelaCare.Shared", "ZelaCare.Shared\ZelaCare.Shared.csproj", "{540C7800-9BB4-4311-8B4D-BF6BEFE2C089}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4FE17E7E-750E-49C9-9792-7A3084B6385B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FE17E7E-750E-49C9-9792-7A3084B6385B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FE17E7E-750E-49C9-9792-7A3084B6385B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540C7800-9BB4-4311-8B4D-BF6BEFE2C089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540C7800-9BB4-4311-8B4D-BF6BEFE2C089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540C7800-9BB4-4311-8B4D-BF6BEFE2C089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540C7800-9BB4-4311-8B4D-BF6BEFE2C089}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

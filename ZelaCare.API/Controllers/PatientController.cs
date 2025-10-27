@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ZelaCare.Application.Models.Patients;
+using ZelaCare.Shared.Models.Patients;
 using ZelaCare.Application.Services;
 
 namespace ZelaCare.API.Controllers
