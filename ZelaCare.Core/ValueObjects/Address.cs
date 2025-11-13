@@ -13,12 +13,12 @@
             ZipCode = zipCode;
         }
         private Address() { }
-        public string Street { get; private set; }
-        public string Number { get; private set; }
-        public string? Complement { get; private set; }
-        public string City { get; private set; }
-        public string State { get; private set; }
-        public string ZipCode { get; private set; }
+        public string Street { get; private set; } = default!;
+        public string Number { get; private set; } = default!; 
+        public string? Complement { get; private set; } = default!; 
+        public string City { get; private set; } = default!;
+        public string State { get; private set; } = default!;
+        public string ZipCode { get; private set; } = default!;
 
         public static Address Empty() => new Address("", "", "", "", "", "");
         public bool IsEmpty() =>
