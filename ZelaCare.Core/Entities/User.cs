@@ -14,12 +14,12 @@ namespace ZelaCare.Core.Entities
             IsActive = true;
         }
 
-        public string Email { get; private set; }
-        public string PasswordHash { get; private set; }
-        public Role Role { get; private set; }
+        public string Email { get; private set; } = default!;
+        public string PasswordHash { get; private set; } = default!;
+        public Role Role { get; private set; } = default!;
         public Guid ClinicId { get; private set; }
-        public Clinic Clinic { get; private set; }
-        public bool IsActive { get; private set; }
+        public Clinic Clinic { get; private set; } = default!;
+        public bool IsActive { get; private set; } = true;
 
         public void Update(string email, Role role)
         {

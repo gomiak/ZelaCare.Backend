@@ -17,12 +17,12 @@ namespace ZelaCare.Core.Entities
             Phone = phone;
         }
 
-        public string Name { get; private set; }
-        public string? CNPJ { get; private set; }
-        public string Phone { get; private set; }
-        public Address? Address { get; private set; }
-        public List<User> Users { get; private set; }
-        public List<Patient> Patients { get; private set; }
+        public string Name { get; private set; } = default!;
+        public string? CNPJ { get; private set; } = default!;
+        public string Phone { get; private set; } = default!;
+        public Address? Address { get; private set; } = default!;
+        public List<User> Users { get; private set; } = [];
+        public List<Patient> Patients { get; private set; } = [];
         public void SetAddress(Address address)
         {
             Address = address;

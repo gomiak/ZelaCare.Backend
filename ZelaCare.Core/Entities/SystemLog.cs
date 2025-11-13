@@ -17,14 +17,14 @@ namespace ZelaCare.Core.Entities
             UserAgent = userAgent;
         }
 
-        public string ClinicId { get; private set; }
-        public string UserId { get; private set; }
-        public string Action { get; private set; }
-        public string ResourceType { get; private set; }
-        public string ResourceId { get; private set; }
-        public string OldValues { get; private set; }
-        public string NewValues { get; private set; }
-        public string IpAddress { get; private set; }
-        public string UserAgent { get; private set; }
+        public string ClinicId { get; private set; } = default!;
+        public string UserId { get; private set; } = default!;
+        public string Action { get; private set; } = default!;
+        public string ResourceType { get; private set; } = default!;
+        public string ResourceId { get; private set; } = default!;
+        public string OldValues { get; private set; } = default!;
+        public string NewValues { get; private set; } = default!;
+        public string IpAddress { get; private set; } = default!;
+        public string UserAgent { get; private set; } = default!;
     }
 }

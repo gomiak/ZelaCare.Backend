@@ -6,7 +6,7 @@ namespace ZelaCare.Core.Entities
     public class Patient : BaseEntity
     {
         private Patient() { }
-        public Patient(string fullName, string cpf, DateTime birthDate, string phone, string email, Address? address, Guid clinicId, string emergencyContact, string emergencyPhone, bool isPrivate)
+        public Patient(string fullName, string? cpf, DateTime birthDate, string phone, string? email, Address? address, Guid clinicId, string emergencyContact, string emergencyPhone, bool isPrivate)
         {
             FullName = fullName;
             CPF = cpf;
@@ -21,18 +21,18 @@ namespace ZelaCare.Core.Entities
             IsActive = true;
         }
 
-        public string FullName { get; private set; }
-        public string? CPF { get; private set; }
-        public DateTime BirthDate { get; private set; }
-        public string Phone { get; private set; }
-        public string? Email { get; private set; }
-        public Address? Address { get; private set; }
+        public string FullName { get; private set; } = default!;
+        public string? CPF { get; private set; } = default!;
+        public DateTime BirthDate { get; private set; } = default!;
+        public string Phone { get; private set; } = default!;
+        public string? Email { get; private set; } = default!;
+        public Address? Address { get; private set; } = default!;
         public Guid ClinicId { get; private set; }
-        public Clinic Clinic { get; private set; }
-        public string EmergencyContact { get; private set; }
-        public string EmergencyPhone { get; private set; }
-        public bool IsPrivate { get; private set; }
-        public bool IsActive { get; private set; }
-        public HealthPlan HealthPlan { get; private set; }
+        public Clinic Clinic { get; private set; } = default!;
+        public string EmergencyContact { get; private set; } = default!;
+        public string EmergencyPhone { get; private set; } = default!;
+        public bool IsPrivate { get; private set; } = false;
+        public bool IsActive { get; private set; } = false;
+        public HealthPlan HealthPlan { get; private set; } = default!;
     }
 }

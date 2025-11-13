@@ -15,13 +15,13 @@ namespace ZelaCare.Core.Entities
             UserId = userId;
         }
 
-        public string FullName { get; private set; }
-        public string Phone { get; private set; }
-        public Specialty Specialty { get; private set; }
-        public RegistryType? RegistryType { get; private set; }
-        public string? ProfessionalRegistry { get; private set; }
+        public string FullName { get; private set; } = default!;
+        public string Phone { get; private set; } = default!;
+        public Specialty Specialty { get; private set; } = default!;
+        public RegistryType? RegistryType { get; private set; } = default!;
+        public string? ProfessionalRegistry { get; private set; } = default!;
         public Guid UserId { get; private set; }
-        public User User { get; private set; }
+        public User User { get; private set; } = default!;
 
     }
 }
