@@ -13,10 +13,12 @@ namespace ZelaCare.Infrastructure.Persistence.Repositories
             _context = context;
         }
 
-        public async Task AddAsync(Patient patient)
+        public async Task<Guid> AddAsync(Patient patient)
         {
             await _context.Patients.AddAsync(patient);
             await _context.SaveChangesAsync();
+
+            return patient.Id;
         }
 
         public async Task UpdateAsync(Patient patient)
