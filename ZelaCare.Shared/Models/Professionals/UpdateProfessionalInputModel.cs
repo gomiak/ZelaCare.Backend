@@ -4,8 +4,9 @@ namespace ZelaCare.Shared.Models.Professionals
 {
     public class UpdateProfessionalInputModel
     {
-        public UpdateProfessionalInputModel(string phone, Specialty specialty, RegistryType? registryType, string? professionalRegistry)
+        public UpdateProfessionalInputModel(string fullName, string phone, Specialty specialty, RegistryType? registryType, string? professionalRegistry)
         {
+            FullName = fullName;
             Phone = phone;
             Specialty = specialty;
             RegistryType = registryType;

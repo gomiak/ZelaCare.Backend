@@ -16,6 +16,7 @@ namespace ZelaCare.Infrastructure
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IClinicRepository, ClinicRepository>();
             services.AddScoped<IPatientRepository, PatientRepository>();
+            services.AddScoped<IProfessionalRepository, ProfessionalRepository>();
 
             return services;
         }
