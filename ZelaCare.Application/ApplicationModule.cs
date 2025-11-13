@@ -9,6 +9,7 @@ namespace ZelaCare.Application
         {
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IClinicService, ClinicService>();
+            services.AddScoped<IProfessionalService, ProfessionalService>();
 
             return services;
         }
