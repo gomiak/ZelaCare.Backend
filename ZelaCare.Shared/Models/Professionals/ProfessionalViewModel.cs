@@ -21,7 +21,6 @@ namespace ZelaCare.Shared.Models.Professionals
         public RegistryType? RegistryType { get; private set; }
         public string? ProfessionalRegistry { get; private set; }
         public Guid UserId { get; private set; }
-        public User User { get; private set; }
 
         public ProfessionalViewModel FromEntity(Professional professional) => new(professional.FullName, professional.Phone, professional.Specialty, professional.RegistryType, professional.ProfessionalRegistry, professional.UserId);
     }
