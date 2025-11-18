@@ -73,7 +73,7 @@ namespace ZelaCare.API.Controllers
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, UpdateProfessionalInputModel model)
-        {
+        {   
             var result = await _service.UpdateAsync(id, model);
 
             if (!result.IsSuccess)
