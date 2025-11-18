@@ -15,7 +15,6 @@ namespace ZelaCare.Shared.Models.Users
         public string Email { get; private set; }
         public Role Role { get; private set; }
         public Guid ClinicId { get; private set; }
-        public Clinic Clinic { get; private set; }
 
         public static UserViewModel FromEntity(User user) => new UserViewModel(user.Email, user.Role, user.ClinicId);
     }
