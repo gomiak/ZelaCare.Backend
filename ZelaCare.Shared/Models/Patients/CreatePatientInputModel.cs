@@ -31,7 +31,7 @@ namespace ZelaCare.Shared.Models.Patients
             HealthPlan = healthPlan;
         }
 
-        public string FullName { get; private set; }
+        public string FullName { get; private set; }  = default!;
         public string? CPF { get; private set; }
         public DateTime BirthDate { get; private set; }
         public string Phone { get; private set; }
